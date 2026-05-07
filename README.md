@@ -1,58 +1,184 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# MAWEECORE 2023 - Personal Portfolio Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A vibrant and interactive personal portfolio website showcasing the journey of Marielle J. Rectin, a first-year Computer Science student at Batangas State University - The National Engineering University.
 
-## About Laravel
+## 🌟 Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Responsive Design**: Fully responsive layout that works seamlessly across all devices
+- **Interactive Sections**: Multiple engaging sections including Home, About, Gallery, Interests, and Contact
+- **Audio Integration**: Built-in music player with gramophone animation
+- **Image Gallery**: Interactive carousel showcasing personal photos
+- **Social Links**: Direct links to social media profiles
+- **Smooth Animations**: Scroll-reveal animations and hover effects
+- **Gradient Backgrounds**: Beautiful gradient background images throughout the site
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🎨 Design Highlights
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Color Scheme**: Yellow-themed design reflecting personal preferences
+- **Typography**: Modern Jost font family for clean, readable text
+- **Layout**: Grid-based layouts with responsive breakpoints
+- **Visual Effects**: 3D transforms, hover animations, and smooth transitions
+- **Background Images**: Custom gradient backgrounds for visual appeal
 
-## Learning Laravel
+## 🚀 Technology Stack
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Backend**: Laravel 11 (PHP Framework)
+- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
+- **Styling**: Custom CSS with responsive design
+- **Icons**: Boxicons and Font Awesome
+- **Fonts**: Google Fonts (Jost family)
+- **Animations**: ScrollReveal.js
+- **Audio**: HTML5 Audio API
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📁 Project Structure
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+```
+├── app/
+│   └── Http/Controllers/          # Laravel Controllers
+├── resources/
+│   ├── css/                      # Laravel CSS (Tailwind)
+│   ├── views/                    # Blade Templates
+│   │   ├── layouts/              # Main layout
+│   │   └── welcome.blade.php    # Homepage content
+│   └── js/                       # JavaScript files
+├── public/
+│   ├── assets/                   # Images, audio, and media files
+│   ├── css/style.css             # Main stylesheet
+│   └── js/app.js                 # Frontend JavaScript
+└── routes/                       # Laravel routing
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## 🎵 Interactive Features
 
-## Contributing
+### Music Player
+- Custom gramophone player design
+- Hover effects with grayscale to color transition
+- Background music integration
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Image Gallery
+- Smooth carousel functionality
+- Drag-to-scroll support
+- Responsive image grid
 
-## Code of Conduct
+### Contact Form
+- Functional email input field
+- Social media integration
+- Downloadable CV feature
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 📱 Responsive Breakpoints
 
-## Security Vulnerabilities
+- **Desktop**: Full grid layouts with hover effects
+- **Tablet**: Adjusted spacing and font sizes
+- **Mobile**: Single-column layouts with hamburger menu
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🛠 Installation & Setup
 
-## License
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/onlymarkive/Personal_Website.git
+   cd Personal_Website
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+2. **Install dependencies**
+   ```bash
+   composer install
+   npm install
+   ```
+
+3. **Environment setup**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **Start the development server**
+   ```bash
+   php artisan serve
+   ```
+
+5. **Build assets** (if using Vite)
+   ```bash
+   npm run dev
+   ```
+
+## 🎯 Sections Overview
+
+### 🏠 Home
+- Personal introduction and greeting
+- Profile picture with hover effects
+- Social media links
+- Navigation to other sections
+
+### 🎵 Sub-Service (Music Section)
+- Interactive gramophone player
+- Background music integration
+- Personal interests showcase
+
+### 👤 About
+- Detailed personal information
+- Middle child theme
+- Yellow color preference explanation
+- Music enthusiasm
+
+### 🖼️ Gallery
+- 2023 photo dump collection
+- Interactive image carousel
+- Smooth scrolling navigation
+
+### 💼 Portfolio (Interests)
+- Six interest categories
+- Hover animations and effects
+- Detailed descriptions
+
+### 🎯 CTA (Fun Facts)
+- Personal statistics
+- Interactive hover effects
+- Unique revelations
+
+### 📧 Contact
+- Email contact form
+- Social media integration
+- Footer information
+
+## 🎨 Customization
+
+### Colors
+- **Primary**: Orange (#ffa500)
+- **Background**: White (#ffffff)
+- **Text**: Black (#000000)
+- **Secondary**: Gray (#444)
+
+### Fonts
+- **Primary**: Jost (Google Fonts)
+- **Weights**: 100-900 available
+
+### Animations
+- Scroll-reveal effects
+- Hover transformations
+- Smooth transitions (0.3s-0.5s)
+
+## 📊 Browser Support
+
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
+
+## 🤝 Contributing
+
+This is a personal portfolio project. For suggestions or improvements, please reach out through the contact information provided in the website.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Marielle J. Rectin**
+- First-year Computer Science Student
+- Batangas State University - The National Engineering University
+- Alangilan Campus
+
+---
+
+*"Navigating the complexities of Computer Science, one line of code at a time."*
